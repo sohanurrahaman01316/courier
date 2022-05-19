@@ -1,0 +1,1175 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+html{
+  scroll-behavior: smooth;
+ 
+}
+.brand-wraper::-webkit-scrollbar{
+  width:0px;
+}
+
+
+
+/*--------for Preloader star------*/
+
+.loader-bg{
+    background:#082032;
+    height:100vh;
+    width:100%;
+    position:fixed;
+    z-index:9999999;
+    
+}
+
+
+
+.loader{
+    border:0px solid transparent;
+    height:170px;
+    width:170px;
+    border-radius:50%;
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform:translate(-50%,-50%);
+    
+}
+
+
+
+
+.loader::before,.loader::after{
+    content:'';
+    border:10px solid white;
+    border-radius:50%;
+    width: inherit;
+    height: inherit;
+    position:absolute;
+    top:0px;
+    left:0px;
+    animation:loader 2s linear infinite;
+    opacity:0;
+    
+}
+
+
+.loader::before{
+    animation-delay:.5s;
+}
+
+
+@keyframes loader{
+    0%{
+        transform:scale(0);
+        opacity:0;
+    }
+   
+   50%{
+       opacity:1;
+   }
+   
+   100%{
+      transform:scale(1);
+      opacity:0; 
+   }
+}
+
+
+
+
+/*--------for Preloader End-----------*/
+
+/* logo start*/
+.main-logo{
+  /* color: rgb(10, 10, 10);
+  font-family: 'Scheherazade New', serif;
+  font-weight: bolder; */
+  height: 50px;
+}
+/* logo end*/
+
+
+/* header log in button style start */
+
+.header-button button{
+color: #ff5200;
+padding: 5px 20px;
+background: transparent;
+border: 1px solid #ff5200;
+text-transform: uppercase;
+border-radius: 5px;
+transition: 0.4s;
+font-weight: bold;
+margin-right: 110px;
+margin-left: 10px;
+margin-top: -2px;
+}
+
+.header-button button:hover{
+    background-color: black;
+    color: white;
+    border: 1px solid black;
+}
+
+/* header log in button style end */
+
+
+/* select language start */
+
+.lang{
+  z-index:1234;
+  position: fixed;
+  top: 20px;
+  right: 10px;
+
+}
+
+.lang i{
+  font-size: 20px;
+  padding: 0px 5px;
+}
+
+@media screen and (max-width:991px) {
+  .lang{
+    position: fixed;
+    right: 80px;
+  }
+
+  .header-wraper{
+    height:620px !important;
+  }
+ 
+}
+
+@media screen and (max-width:767px) {
+  .header-wraper{
+    height:700px !important;
+  }
+}
+
+
+
+@media screen and (max-width:600px){
+  .main-logo{  
+    margin-left: -10px;
+    font-size: 24px;
+  }
+  
+}
+
+
+/* select language end */
+
+
+@media screen and (max-width:498px){
+  .button-track{
+    top: 350px !important;
+  }
+  
+}
+
+
+@media screen and (max-width:390px){
+ 
+.button-track{
+  top: 350px !important;
+}
+
+
+.header-wraper{
+  height:700px !important;
+}
+
+
+.track-id input{
+    width: 200px !important;
+    
+}
+
+.shop-btn{
+  width: 200px !important;
+  
+}
+
+.track-number-btn{
+  width: 200px !important;
+}
+
+}
+
+
+
+/* part one navbar  start */
+
+
+.navbar{
+  width:100%;
+  background-color:white;
+  box-shadow: 0px 0px 8px black;
+       
+}
+
+
+.navbar-toggler {
+   background: #03256C;
+}
+.navbar-nav{
+  border-radius: 10px;
+    
+}
+
+
+.navbar-nav li a{
+  color: rgb(12, 12, 12);
+  text-transform: uppercase;
+  margin-bottom:8px;
+  font-size: 14px;
+  font-weight: bold;
+  border-radius: 4px;
+  padding:8px 15px !important;
+  transition: .3s;
+  display: inline-block;
+
+}
+
+.navbar-nav li a:hover{
+  color: rgb(14, 1, 1);
+  background: rgb(233, 231, 231);
+}
+
+.color-black{
+  margin-right: 50px;
+}
+
+
+/* part one navbar  end */
+
+
+
+
+/* part 2 header  start*/
+
+.header-wraper{
+    background-image:url(image/header-photo.jpg) !important;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width:100%;
+    background-color: rgba(0,0,0,0.7);
+    position: relative;
+    background-attachment: fixed;
+    background-position:right;
+    height: 750px;
+}
+
+
+.header-item{
+    background: rgba(0,0,0,0.7);
+    height: 100%;
+}
+
+
+/* .header-h1 {
+  color: white;
+  font-weight:700;
+  text-transform:capitalize;
+  padding-top: 150px;
+  padding-right: 20px;
+  padding-bottom: 30px; 
+  font-family: 'Scheherazade New', serif;
+  font-size:45px;
+ 
+ 
+  
+
+}
+
+
+@keyframes headings{
+  
+  from{
+   margin-left:0px;
+  }
+  to{
+  margin-left:20px;
+  }
+} */
+
+.header-h1{
+  position: absolute;
+  color: white;
+  font-weight:700;
+  text-transform:capitalize;
+  padding-right: 20px;
+  padding-bottom: 30px; 
+  font-family: 'Scheherazade New', serif;
+  font-size:45px;
+  top: 150px;
+
+  animation-name: raihan;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+}
+
+
+@keyframes raihan {
+  0%{
+    margin-top: 0px;
+  }
+
+  50%{
+    margin-top: -25px;
+  }
+  
+}
+
+.button-track{
+  display: block;
+  position: absolute;
+  top:300px;
+}
+
+
+.shop-btn{
+  border: none;
+  background-color: #f70844;
+  color: white;
+  border-radius: 50px;
+  transition:0.4s;
+  font-family: 'Courier New', Courier, monospace;
+  padding: 10px 0px;
+  width: 240px;
+  margin-bottom: 20px;
+  font-weight: 700;
+  margin-right:50px !important;
+  position: inherit;
+}
+
+.shop-btn:hover{
+  background: rgb(244, 246, 247);
+  color:rgb(2, 0, 0);
+}
+
+.track-id input{
+  padding:10px 25px;
+  outline: none;
+  border-radius: 50px;
+  border: none;
+  width: 240px;
+  margin-bottom: 15px;
+  z-index: 6 !important;
+  display: block;
+  transition: .5s;
+  
+}
+.track-id input:hover{
+  width:300px;
+}
+
+.track-number-btn{
+  background: #ff5200;
+  width: 240px;
+  padding: 8px 0px;  
+  outline: none;
+  border-radius:50px;
+  border: none;
+  transition: ease-out 0.4s;
+  font-family: 'Courier New', Courier, monospace;
+  color: white;
+  font-weight: bold;
+  text-transform: uppercase;
+  /* margin-bottom: 250px; */
+  font-size: 18px;
+}
+
+.track-number-btn:hover{
+  background:rgb(255, 255, 255);
+  color:black;
+}
+
+.waves{
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+
+
+/* part 2 header end*/
+
+
+
+/* Brand name start  */
+
+.brand-wraper{
+  display: flex;
+  overflow-x: auto;
+  
+}
+
+.brand-item img{
+  min-width:100px;
+  margin:30px;
+  margin-top: 50px;
+ 
+}
+
+/* Brand name End  */
+
+
+
+
+/* part4 our sercvice start */
+
+.our-service-header{
+   padding-top: 100px;
+   text-align: center;
+
+}
+    
+.our-service-header b{
+   color: green;
+   font-size: 20px;
+   font-weight: bolder;
+   font-family: 'Courier New', Courier, monospace;
+}
+    
+.our-service-header h1{
+   font-size: 30px; 
+   padding-top: 20px;
+   font-family:fantasy;
+}
+    
+    
+.service-card{
+   text-align: center;
+   margin-top: 50px;
+   border: 1px solid rgba(0, 0, 0, 0.174);
+   border-radius: 5px;
+   height: 340px;
+   transition: 1s;
+   position: relative;
+   
+ }
+    
+.service-card i{
+   font-size: 40px;
+   color: #ff5200;
+   margin-top: 50px;
+}
+    
+
+    
+    
+.service-card h1{
+   margin-top: 30px;
+   font-size: 26px;
+   font-weight: bolder;
+   font-family: sans-serif;
+   font-family: 'Scheherazade New', serif;
+   color:#00235B ;
+}
+    
+.service-card p{
+   margin: 25px;
+   text-align: center;
+   line-height: 35px;
+    
+}
+    
+.service-card::before{
+  content: "";
+  height: 0;
+  width: 100%;
+  position: absolute;
+  background-color: deeppink;
+  z-index: -1;
+  transition: 0.7s;
+  border-radius: 5px;
+  left:-450px;
+  overflow: hidden !important;
+  top:50%;
+   
+}
+    
+.service-card:hover::before{
+  height: 100%;
+  left: 0px;
+  top: 0px;
+}
+   
+.service-card:hover{
+  color: white;   
+}
+    
+    
+.service-card:hover i,h1{
+  color: white;
+}     
+.service-card:hover h1{
+  color: white;
+       
+}
+
+
+
+/* part4 our sercvice css end */
+
+
+
+
+
+
+/* patt5 our-company style start */
+
+
+.our-company{
+    margin-top: 90px;
+    
+}
+.our-company b{
+    color: #ff5200;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.our-company h3{
+    margin-top: 20px;
+    line-height: 45px;
+    font-weight: bold;
+    font-size:30px;
+    font-family: 'Playfair Display', serif;
+
+}
+.our-company p{
+    color: rgba(22, 18, 18, 0.592);
+    margin-top: 50px;
+}
+.our-company button{
+    margin-top: 30px;
+    color: white;
+    background-color: rgb(7, 138, 18);
+    padding: 8px 20px;
+    border: none;
+    text-transform: uppercase;
+    border-radius:10px ;
+    transition: 0.5;
+    font-weight: bold;
+    font-family: 'Playfair Display', serif;
+}
+
+.our-company button:hover{
+   background-color: rebeccapurple;
+}
+
+
+.our-company img{
+    width: 100%;
+    margin-top:0px;
+}
+
+/* patt5 our-company style end */
+
+
+
+
+
+/* CNTACT US START */
+  
+.request-qote{
+    background-image: url(contact-us.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 100px 0px;
+    font-family:'PT Serif', serif;
+    margin-top: 50px;
+  }
+  
+  .contact-form-wrapper{
+    background:linear-gradient(to right, #ff5200,deeppink);
+    padding: 40px;
+    border-radius: 10px;
+  }
+  .section-tittle span{
+    color: #2C234D;
+    font-size: 20px;
+    font-weight: bold;
+  }
+  
+  .section-tittle h2{
+    color: #e4e7e1;
+    padding: 20px 0px;
+    font-weight: bolder;
+    
+  }
+  .section-tittle p{
+    color: #130b06;
+    font-weight: bold;
+    
+  }
+  
+  
+  .contact{
+    padding-bottom:20px;
+  }
+  
+  .contact-form input{
+    background:transparent;
+    border:1px solid rgb(0, 5, 8);
+    padding: 20px;
+    margin: 10px;
+    width: 100%;
+    border-radius:5px;
+    outline: none;
+    color: white;
+  }
+  
+  #select1{
+    background:transparent;
+    border:1px solid rgb(0, 5, 8);
+    padding: 20px;
+    margin: 10px;
+    border-radius:5px;
+    outline: none;
+    width: 100%;
+    color: white;
+  }
+  
+  #select1 option{
+    color:black;
+    background-color: transparent;
+  }
+  .contact-form input::placeholder{
+    color: white;
+  }
+  
+  .radio-wrapper span{
+    font-size: 20px;
+    color: white;
+    font-weight: bolder;
+    
+  }
+  
+  .radio label{
+    color: rgb(8, 1, 17);
+    margin-top: 5px;
+    font-weight: bolder;
+  }
+  
+  .quote-btn{
+    background: #690ae6;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    color: white;
+    margin-top: 15px;
+    font-weight: bold;
+  }
+  /* CNTACT US END */
+
+
+
+/*-----------Animate Count Start----------*/  
+ .animate-count{
+   background: black;
+ } 
+  
+.animate-count > i{
+  font-size:60px;
+  color:white;
+  background:orange;
+  padding:15px;
+  border-radius:50%;
+  
+}
+
+
+.animate-count > p{
+  font-size:45px;
+  font-weight:bolder;
+  letter-spacing:5px;
+  
+  
+}
+
+
+.animate-count > h2{
+  font-size:40px;
+  padding-bottom:15px;
+  font-weight:bolder;
+  letter-spacing:4px;
+  color: white;
+}
+
+
+
+.animate-count >.animate-one i{
+   color:white;
+   background:rgb(255, 0, 0);
+   padding:20px;
+   border-radius:50%;
+   margin-top:50px;
+   font-size:70px;
+}
+
+.animate-count >.animate-one p{
+  font-weight:bolder;
+  padding-top:15px;
+  font-size:60px;
+  color: white;
+}
+
+
+.animate-count >.animate-one h4{
+  color:rgb(255, 0, 0);
+  margin-top:-20px;
+  font-weight: bold;
+  font-family:'PT Serif', serif;
+
+}
+
+
+
+
+.animate-count >.animate-two i{
+   color:white;
+   background:#00EAD3;
+   padding:20px;
+   border-radius:50%;
+   margin-top:50px;
+   font-size:70px;
+}
+
+
+.animate-count >.animate-two p{
+  font-weight:bolder;
+  padding-top:15px;
+  padding-bottom: 5px;
+  font-size:60px;
+  color: white;
+}
+
+
+.animate-count >.animate-two h4{
+  color:#00EAD3;
+  margin-top:-20px;
+  font-family:'PT Serif', serif;
+}
+
+
+
+
+
+
+.animate-count >.animate-three i{
+   color:white;
+   background:#03256C;
+   padding:20px;
+   border-radius:50%;
+   margin-top:50px;
+   font-size:70px;
+}
+
+
+.animate-count >.animate-three p{
+  font-weight:bolder;
+  padding-top:15px;
+  font-size:60px;
+  color: white;
+}
+
+
+.animate-count >.animate-three h4{
+  color:#0851ee;
+  margin-top:-20px;
+  font-weight: bold;
+  font-family:'PT Serif', serif;
+}
+
+
+
+
+
+.animate-count >.animate-four i{
+   color:white;
+   background:#ED1250;
+   padding: 20px;
+   border-radius:50%;
+   margin-top:50px;
+   font-size:70px;
+}
+
+
+.animate-count >.animate-four p{
+  font-weight:bolder;
+  padding-top:15px;
+  font-size:60px;
+  color: white;
+}
+
+
+.animate-count >.animate-four h4{
+  color:#ED1250;
+  margin-top:-20px;
+  padding-bottom:70px;
+  font-weight: bold;
+  font-family:'PT Serif', serif;
+}
+ 
+
+
+/*-----------Animate Count End----------*/
+
+/* OUR TEAM START */
+  
+.our-team{
+    padding: 100px 0px;
+    
+  }
+  
+  .our-team-intro span{
+    display: block;
+    text-align: center;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: bolder;
+    color: #ff5200;
+  }
+  
+  .our-team-intro h2{
+    display: block;
+    text-align: center;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: bolder;
+    color: #4906e4;
+    padding: 20px 0px;
+  }
+  
+  .team-mamber{
+    border: .1px solid rgba(0,0,0,.2);  
+    margin: 10px;
+    border-radius: 5px;
+    position: relative;
+    transition: 0.5s;
+    overflow: hidden;
+    
+  }
+  .team-mamber img{
+    width: 100%;
+  }
+  
+  .team-mamber:hover{
+    
+    box-shadow: 4px 4px 14px gray;
+  }
+  .mamber-info{
+    background: rgba(255,20,147,.7);
+    text-align: center;
+    font-family: 'Playfair Display', serif;
+    font-weight: bolder;
+    opacity: .5;
+    position: absolute;
+    bottom: 0px;
+    width: 100%;
+    color: white;
+    transition: 0.5s;
+    transform: translateY(55px);
+  
+  }
+  .mamber-info i{
+    color: #0a56e4;
+    text-align: center;
+    margin-bottom: 20px;
+    margin-right: 8px;
+    font-size: 26px;
+    transform: translateY(28px); 
+    transition: .5s;
+    background: white;
+    padding: 10px;
+    border-radius: 5px;
+    width: 45px;
+  }
+  
+  .team-mamber:hover .mamber-info {
+    opacity: 1;
+    transform: scaleY(1);
+    
+  }
+  
+  .team-mamber:hover .mamber-info i{
+    visibility: visible;
+    transform: scaleY(1);
+  }
+  
+  /* OUR TEAM END*/
+
+
+
+/* What our client say sart  */
+  
+.client-review{
+    background:radial-gradient(farthest-corner at 40px 40px, #00235B 60%,deeppink );
+    padding: 100px 0px;
+  }
+  
+  .client-item {
+    padding-bottom: 50px;
+  }
+  .client-item span{
+    color: #ff5200;
+    font-weight: bold;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+  }
+  
+  .client-item h2{
+    color: white;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    letter-spacing: 1px;
+    padding: 10px 0px;
+    font-size: 38px;
+  }
+
+  /* carousal start */
+
+  .carousel-inner{
+    position: relative;
+  }
+
+  .client-item h4{
+    color: white;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    letter-spacing: 0px;
+    padding-top: 10px;
+    font-size: 24px;
+    display: inline-block;
+    padding-left: 10px;
+  }
+
+.carousel-control-prev{
+   color: #ff5200;
+   border: 1px solid #ff5200;
+   height: 50px;
+   border-radius: 4px;
+   top: 315px;
+   position: absolute;
+  
+}
+
+
+.carousel-control-next{
+  color: #ff5200;
+  border: 1px solid #ff5200;
+  height: 50px;
+  border-radius: 4px;
+  top: 315px;
+  position: absolute;
+  
+}
+
+
+@media screen and (max-width:1000px){
+   .client-item{
+     padding-bottom: 120px;
+   }
+}
+
+
+  .client-item p{
+    color:#888;
+    padding: 10px 0px;
+    font-weight: bold;
+    text-align: justify;
+    
+    
+  }
+  
+  .client-item img{
+    border-radius: 50%;
+    height: 100px;
+    width:100px;
+    display: inline;
+  }
+  .client-box{
+    background: white;
+    padding: 40px;
+    border-radius: 10px;
+  }
+  
+  .client-box h4{
+    color:#00235B ;
+    border-radius: 5px;
+    font-weight: 700;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-align: center;
+  
+  }
+  
+  .client-box input{
+    background: transparent;
+    border: 1px solid black;
+    outline: none;
+    padding: 20px;
+    width: 100%;
+    border-radius: 5px;
+  }
+  
+  /* What our client say End */
+  
+  
+  
+   /* Tourist Blog Start */
+  
+  .tourist-blog{
+    padding-top: 100px;
+    
+  }
+  
+  .tourist-intro span{
+    display: block;
+    text-align: center;
+    font-weight: bold;
+    color: #00235B;
+    padding-bottom: 10px;
+  }
+  
+  .tourist-intro h2{
+    text-align: center;
+    padding-bottom: 30px;
+    font-weight: bolder;
+    color: #ff5200;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 35px;
+  }
+  
+  
+  .tourist-item {
+    margin-top:10px !important;
+    border: 1px solid rgb(177, 172, 172);
+    border-radius: 5px;
+    transition: 0.5s;
+    
+  }
+  
+  .tourist-item:hover{
+      transform: scale(1.02);
+  }
+  .tourist-item img{
+    width: 100%;
+  }
+  
+  .tourist-item span{
+   background: #5690ee;
+   padding: 20px;
+   border-radius: 5px;
+   display: inline-block;
+   color: white;
+   font-weight: bold;
+   margin: 10px 0px;
+   margin-left: 5px;
+  }
+  
+  .tourist-item h3{
+   color: #00235B;
+   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+   margin-left: 5px;
+   padding-top:10px;
+   padding-bottom: 25px;
+  }
+  
+  
+   /* Tourist Blog End */
+
+
+
+
+/* fotter-section style start */
+
+
+.main-fotter{
+    background-color: black;
+    margin-top: 80px;
+    padding-top: 50px;
+    margin-bottom: -25px;
+    font-family: 'Playfair Display', serif;
+}
+
+.fotter-header-content h1{
+    font-size: 25px;
+    font-weight: bold;
+    color: rgba(255, 255, 255, 0.886);
+}
+.fotter-header-content2 h1{
+    font-size: 25px;
+    font-weight: bold;
+    color:purple;
+    margin-top: 25px;
+}
+
+.fotter-content-one h4{
+    text-transform: uppercase;
+    color: rgba(255, 255, 255, 0.763);
+    margin-bottom: 35px;
+    margin-top: 30px;
+    font-size: 20px;
+}
+.fotter-content-one p{
+    color: rgba(255, 255, 255, 0.324);   
+    transition: 0.4s;
+}
+
+.fotter-content-one button{
+    color: #ff5200;   
+    transition: 0.4s;
+    border: none;
+    background: transparent;
+    padding-bottom: 20px;
+    font-size: 20px;
+}
+.fotter-content-one p:hover{
+    color: purple;
+    margin-left: 5px;
+}
+
+
+.fotter-socialmedia i{
+font-size: 26px;
+background-color:#393F43;
+color: white;
+border-radius: 5px;
+padding:12px;
+margin-right: 10px;
+transition: .5s;
+}
+
+
+.fotter-socialmedia i:hover{
+   background-color: orangered;
+   transform: scale(1.06);
+}
+
+
+
+.top-icon i{
+  background: #0851ee;
+  padding: 15px;
+  border-radius: 5px;
+  font-size: 26px;
+  color: #ff5200;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 7;
+}
+
+/* fotter-section style end */
+
+
+
+
+
+
+
+
